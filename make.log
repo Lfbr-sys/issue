@@ -1,0 +1,27 @@
+DKMS make.log for rtlwifi-1.0.0.0 for kernel 5.7.0-2parrot2-amd64 (x86_64)
+Fri 04 Sep 2020 05:04:07 AM +03
+if [ -e verify_branch.sh ] ; \
+then \
+    ./verify_branch.sh ; \
+fi;
+Verifying a sane branch for your kernel version...
+Yes
+make -C /lib/modules/5.7.0-2parrot2-amd64/build M=/var/lib/dkms/rtlwifi/1.0.0.0/build modules
+make[1]: Entering directory '/usr/src/linux-headers-5.7.0-2parrot2-amd64'
+  CC [M]  /var/lib/dkms/rtlwifi/1.0.0.0/build/base.o
+  CC [M]  /var/lib/dkms/rtlwifi/1.0.0.0/build/usb.o
+  CC [M]  /var/lib/dkms/rtlwifi/1.0.0.0/build/rc.o
+  CC [M]  /var/lib/dkms/rtlwifi/1.0.0.0/build/debug.o
+gcc: error: unrecognized command-line option ‘--param=allow-store-data-races=0’; did you mean ‘--allow-store-data-races’?
+make[3]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/scripts/Makefile.build:272: /var/lib/dkms/rtlwifi/1.0.0.0/build/base.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+gcc: error: unrecognized command-line option ‘--param=allow-store-data-races=0’; did you mean ‘--allow-store-data-races’?
+gcc: error: unrecognized command-line option ‘--param=allow-store-data-races=0’; did you mean ‘--allow-store-data-races’?
+make[3]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/scripts/Makefile.build:272: /var/lib/dkms/rtlwifi/1.0.0.0/build/usb.o] Error 1
+make[3]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/scripts/Makefile.build:272: /var/lib/dkms/rtlwifi/1.0.0.0/build/rc.o] Error 1
+gcc: error: unrecognized command-line option ‘--param=allow-store-data-races=0’; did you mean ‘--allow-store-data-races’?
+make[3]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/scripts/Makefile.build:272: /var/lib/dkms/rtlwifi/1.0.0.0/build/debug.o] Error 1
+make[2]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/Makefile:1745: /var/lib/dkms/rtlwifi/1.0.0.0/build] Error 2
+make[1]: *** [/usr/src/linux-headers-5.7.0-2parrot2-common/Makefile:180: sub-make] Error 2
+make[1]: Leaving directory '/usr/src/linux-headers-5.7.0-2parrot2-amd64'
+make: *** [Makefile:29: all] Error 2
